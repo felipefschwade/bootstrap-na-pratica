@@ -4,25 +4,28 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
         <header>
             <nav class="navbar navbar-inverse">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Loja Virtual</a>
-                    <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-collapse">Menu</button> <!-- Botão para exibir o menu collapsed-->
+                 <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Caelum</a>    
+                    <button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">Menu</button> <!--Criando um botão que esconde o menu-->
                 </div>
                 <div class="collapse navbar-collapse"> <!-- Criando um menu escondido para celulares -->
                     <ul class="navbar-nav nav">
                         <li><a href="#">Novidades</a></li>
-                        <li><a href="#">Mais Vendidos</a></li>
+                        <li><a href="#">Mais vendidos</a></li>
                         <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Camisetas <!--Criando o gatiho do drop-down-->
-                                <span class="caret"></span>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Camisetas
+                                <span class="caret"> </span>
                             </a>
-                            <ul class="dropdown"> <!-- Criando um menu drop-down oculto-->
-                                <li><a href="#">Masculina</a></li>
-                                <li><a href="#">Feminina</a></li>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Masculinas</a></li>
+                                <li><a href="#">Femininas</a></li>
                                 <li><a href="#">Infantil</a></li>
                             </ul>
                         </li>
@@ -80,6 +83,5 @@
                 </div>
             </div>
         </main>
-     <script rel="javascript" src="js/bootstrap.min.js"></script>
     </body>
 </html>
