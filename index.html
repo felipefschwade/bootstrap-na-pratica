@@ -10,11 +10,14 @@
             .fullscreen{
                 width: 100%;
             }
+            main{
+                padding-top: 50px;
+            }
         </style>
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-inverse">
+            <nav class="navbar navbar-fixed-top navbar-inverse">
                  <div class="navbar-header">
                     <a href="#" class="navbar-brand">Caelum</a>    
                     <button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">Menu</button> <!--Criando um botão que esconde o menu-->
@@ -45,7 +48,7 @@
             </nav>
         </header>
         <main>
-            <div class="carousel slide" data-ride="carousel" >
+            <div class="carousel slide" id="carousel" data-ride="carousel" >
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <img src="img/banner1.jpg" alt="Moda" class="fullscreen" />
@@ -54,37 +57,58 @@
                         <img src="img/banner2.jpg" alt="Moda Infantil" class="fullscreen" />
                     </div>
                 </div>
-            </div>
-            <h3 class="text-center">Novidades</h3>
-            <div class="col-md-4 text-center thumbnail">
-                <figure>
-                    <img src="img/camisa-azul.png">
-                    <div>
-                        <h4>Camisa Azul Importada</h4>
-                        <p>Belíssima Camisa importada de pano fino.</p>
-                    </div>
-                </figure>
-                <div class="btn-group">
-                    <a href="#" class="btn btn-default">R$190.00</a>
-                    <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
+                <div>
+                    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                  </a>
                 </div>
             </div>
-                
-            <div class="col-md-4 text-center thumbnail">
-                <figure>
-                    <img src="img/camisa-rosa.png">
-                    <div>
-                        <h4>Camisa Rosa Argentina</h4>
-                        <p>Belíssima Camisa Argentina de pano fino.</p>
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <div class="text-center">
+                        <h3>Categorias</h3>
                     </div>
-                </figure>
-                <div class="btn-group">
-                    <a href="#" class="btn btn-default">R$210.00</a>
-                    <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">Camisetas Masculinas</a></li>
+                        <li class="list-group-item"><a href="#">Camisetas Femininas</a></li>
+                        <li class="list-group-item"><a href="#">Roupas de Inverno</a></li>
+                        <li class="list-group-item"><a href="#">Roupas de Verão</a></li>
+                    </ul>
                 </div>
-            </div>
-                    
-            <div class="col-md-4 text-center thumbnail">
+                <div class="col-xs-12 col-md-9">
+                    <h3 class="text-center">Novidades</h3>
+                    <div class="col-md-4 text-center thumbnail">
+                    <figure>
+                        <img src="img/camisa-azul.png">
+                        <div>
+                            <h4>Camisa Azul Importada</h4>
+                            <p>Belíssima Camisa importada de pano fino.</p>
+                        </div>
+                    </figure>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-default">R$190.00</a>
+                        <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
+                    </div>
+                </div>
+                    <div class="col-md-4 text-center thumbnail">
+                    <figure>
+                        <img src="img/camisa-rosa.png">
+                        <div>
+                            <h4>Camisa Rosa Argentina</h4>
+                            <p>Belíssima Camisa Argentina de pano fino.</p>
+                        </div>
+                    </figure>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-default">R$210.00</a>
+                        <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
+                    </div>
+                </div>
+                    <div class="col-md-4 text-center thumbnail">
                 <figure>
                     <img src="img/camisa-azul.png">
                     <div>
@@ -95,6 +119,8 @@
                 <div class="btn-group">
                     <a href="#" class="btn btn-default">R$90.00</a>
                     <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
+                </div>
+            </div>
                 </div>
             </div>
         </main>
